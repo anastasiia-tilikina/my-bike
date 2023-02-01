@@ -1,0 +1,13 @@
+.compare {
+  @include onDesktop {
+    @include grid(1, 1, 1);
+  }
+
+  &__bike {
+    margin: 0 auto;
+
+    @include onDesktop {
+      margin: 0;
+    }
+  }
+}

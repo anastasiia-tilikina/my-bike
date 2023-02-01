@@ -1,0 +1,46 @@
+.details {
+  &__detail {
+    margin-bottom: 40px;
+    
+    @include onTablet {
+      margin-bottom: $page-big-gap;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    margin: 0 auto;
+    
+    @include onTablet {
+      width: 65%;
+    }
+    
+    @include onDesktop {
+      width: 32%;
+    }
+
+    &:hover {
+      width: 92%;
+      
+      @include onTablet {
+        width: 60%;
+      }
+      
+      @include onDesktop {
+        width: 29%;
+      }
+    }
+
+    &:active {
+      width: 100%;
+      
+      @include onTablet {
+        width: 67%;
+      }
+      
+      @include onDesktop {
+        width: 33%;
+      }
+    }
+  }
+}
